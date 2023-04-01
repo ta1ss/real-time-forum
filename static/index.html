@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/script/main.js" type="module"></script>
+    <script src="https://kit.fontawesome.com/cde4fd9a78.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    
+    <title>real-time-forum</title>
+</head>
+
+    <header>
+        <div id="back">
+            <button id="back-button" class="hidden"><i class="fa-solid fa-angles-left"></i></button>
+        </div>
+
+        <div id="real-time-forum">
+            <!-- <h1>real-time-forum</h1> -->
+        </div>
+
+        <div id="log-out" class="hidden">
+            <button id="log-out-button"><i class="fa-solid fa-right-from-bracket"></i></button>
+        </div>
+    </header>
+
+    <body>
+
+        <div id="login-div" class="hidden">
+            <h2>Log-In</h2>
+            <div id="login-input-box">
+                <input type="text" id="login-user" name="nickname" placeholder="E-Mail/Nickname" required>
+            </div>
+            <div id="login-input-box">
+                <input type="password" id="login-password" name="password" placeholder="Password" required>
+            </div>
+            <input type="submit" id="login-submit" value="Submit">
+            <div id="register-here">
+                <p>Don't have an account?</p> <button id="swap-register">Register here</button>
+            </div>
+        </div>
+
+        <div id="register-div" class="hidden">
+            <h2>Register</h2>
+            <div id="login-input-box">
+                <input type="text" id="register-nickname" name="nickname" placeholder="Nickname">
+            </div>
+            <div id="login-input-box">
+            <input type="text" id="age" name="age" placeholder="Age">
+            </div>
+            <div id="login-input-box">
+                <select id="gender" name="gender">
+                    <option value="">Select gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                  </select>
+            </div>
+            
+              <div id="login-input-box"> 
+                  <input type="text" id="firstName" name="firstName" placeholder="First Name">
+              </div>
+              <div id="login-input-box">
+                  <input type="text" id="lastName" name="lastName" placeholder="Last Name">
+              </div>
+              <div id="login-input-box">
+                  <input type="email" id="register-email" name="email" placeholder="E-Mail">
+              </div>
+              <div id="login-input-box">
+                  <input type="password" id="register-password" name="password" placeholder="Password">
+              </div>
+                  <input type="submit" id="register-submit" value="Submit">
+            <div id="register-here"> 
+                <p>Already have an account?</p> <button id="swap-login">Login here</button>
+            </div>
+        </div>
+        
+        <div class="users-wrapper">
+        <div id="users" class="hidden"></div>
+        <div id="chat-box-div">
+            <div id="chat-box-messages"></div>
+            <div id="typing"></div>
+            <div id="chat-box-box">
+                <textarea id="chat-input" placeholder="type your message.."></textarea>
+                <button id="chat-submit"><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+        </div> 
+        </div>
+    </body>
+
+    <footer>
+        <p>© 2023 Viktor Veertee & Enri Suimets</p>
+    </footer>
+</html>
